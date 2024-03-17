@@ -11,13 +11,18 @@
 </head>
 <body>
 <header>
-    <nav>
-        <p>&#9776;</p>
-        
+    <nav class="hamburger">
+        <p class="ham-menu">&#9776;</p>
     </nav>
+    <div class="list">
+        <p>Bars</p>
+        <p>Boxes</p>
+        <p>Custom</p>
+        <p>Treats</p>
+    </div>
     <p class="head-logo">LA Chocolate Co.</p>
-    <!-- shopping cart icon
-    account icon -->
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+    <div class="account"><i class="fa-solid fa-user"></i></div>
 </header>
 <main>
     <div>
@@ -27,54 +32,74 @@
     </div>
 
     <section>
-        <h2>New Arrivals</h2>
+        <h2 class="new">New Arrivals</h2>
         <div class="scroll">
-            <img src="images/peanut-butter-cup.png" alt="link to the peanut butter cups" class="peanut-butter-cup">
-            <img src="images/coconut-treat.png" alt="link to the coconut treats" class="coconut">
-            <img src="images/choco-drop.png" alt="link to the chocolate waffer drops" class="choco-drop">
-            <img src="images/marshmellow-treat.png" alt="link to the marshmellow treats" class="marshmellow">
+            <div><img src="images/peanut-butter-cup.png" alt="link to the peanut butter cups" class="peanut-butter-cup"></div>
+            <div><img src="images/coconut-treat.png" alt="link to the coconut treats" class="coconut"></div>
+            <div><img src="images/choco-drop.png" alt="link to the chocolate waffer drops" class="choco-drop"></div>
+            <div class="last"><img src="images/marshmellow-treat.png" alt="link to the marshmellow treats" class="marshmellow"></div>
+        </div>
+        <div class="back-ground"></div>
+        <div class="more">
+        <p>see more</p>
+        <i class="fa-solid fa-arrow-right"></i>
         </div>
     </section>
 
-    <div class="half-circle-blue"></div>
-    <div class="half-circle-pink"></div>
 
-    <div>
+        <div class="half-circle-pink"></div>
+        <div class="half-circle-blue"></div>
+
+    <div class="shopping">
        <img src="images/home-bar-link.png" alt="chocolate bar shop button" class="shop-bars">
-    <button>Bars</button>
+    <!-- <button type="button">Bars</button> -->
        <img src="images/home-box-link.png" alt="chocolate boxes shop button" class="shop-boxes">
-    <button type="button">Boxes</button>
+    <!-- <button type="button">Boxes</button> -->
     </div>
 
-    <section>
-        <h2>Check our Socials</h2>
-        <!-- twitter logo
-        instagram logo
-        tik tok logo -->
+    <section class=socials>
+        <h2 class="cos">Check our Socials</h2>
+        <div class="social-logo">
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        </div>
     </section>
 
    <div>
-    <!-- hand icon -->
-    <p>Ethically Sourced</p>
-    <!-- truck icon -->
-    <p>Nationwide Shipping</p>
+    <div class="ethics">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    <p class="source">Ethically Sourced</p>
+    </div>
+    <div class="shipping">
+    <i class="fa-solid fa-truck"></i>
+    <p class="nation">Nationwide Shipping</p>
+    </div>
    </div> 
 
  <section>
-    <h2>Location</h2>
+    <h2 class="location">Location</h2>
     <img src="images/location-map.png" alt="map of shop location" class="map">
-    <p>(804)123-4567</p>
-    <!-- clock icon -->
+    <a href="#"><p class="number">(804)123-4567</p></a>
+    <i class="fa-regular fa-clock"></i>
+    <div class="mon">
     <p>Mon-Fri</p>
     <p>9:00 am - 7:00 pm</p>
+    </div>
+    <div class="sun">
     <p>Sun & Sat</p>
     <p>9:00 am - 10:00 pm</p>
+    </div>
  </section> 
 </main>
 
 <footer>
-    <p>(804)123-4567</p>
-    <p>LAChocoCo@gmail.com</p>
+    <div class="email">
+    <a href="#"><p>(804)123-4567</p></a>
+    <a href="#"><p class="address">LAChocoCo@gmail.com</p></a>
+    </div>
 </footer>
+
+<script src="https://kit.fontawesome.com/8707e4bf1f.js" crossorigin="anonymous"></script>
 </body>
 </html>
