@@ -26,7 +26,6 @@ box-sizing:border-box;
 }
 
 header{
-  outline:red solid 2px;
  min-height:10px;
   background-image: linear-gradient(to right,rgba(255,122,190,0.6),rgba(255,222,79,0.6), rgba(117,200,245,0.6));
 }
@@ -127,35 +126,6 @@ label{
 }
 
 
-/* .list{
-  display:none;
-} */
-
-/* .hamburger{
-  font-size:2rem;
-  padding-left:2%;
-  padding-top:2%;
-} */
-
-/* #hamburger{
-  display:none;
-}
-
-#hamburger:checked ~ ul{
-  display:block;
-}
-
-nav ul{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  background-color:white;
-}
-
-nav ul li{
-  list-style-type:none;
-  
-} */
 
 /* Hero Video */
 .hero-vid{
@@ -225,29 +195,6 @@ p{
 
 
 /* Shopping */
-/* .half-circle-blue{
-  width:400px;
-  height:300px;
-  background-color:#75C8F5;
-  border-top-left-radius:310px;
-  border-top-right-radius:310px;
-  position:relative;
-  left:60%;
-  bottom:20px;
-  z-index:-999;
-} */
-
-/* .half-circle-pink{
-  width:400px;
-  height:300px;
-  background-color:#FF7ABE;
-  border-top-left-radius:310px;
-  border-top-right-radius:310px;
-  position:relative;
-  bottom:20px;
-  right:30%;
-  z-index:-999;
-} */
 
 .pink-half{
   position:relative;
