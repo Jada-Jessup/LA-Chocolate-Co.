@@ -11,20 +11,58 @@
 </head>
 <body>
 <header>
-    <nav class="hamburger">
-        <p class="ham-menu">&#9776;</p>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" name="hamburger-check">
+    <nav>
+        <ul>
+            <li><a href="#">search</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">account</a></li>
+            <li><a href="#">cart</a></li>
+        </ul>
     </nav>
-    <div class="list">
-        <p>Bars</p>
-        <p>Boxes</p>
-        <p>Custom</p>
-        <p>Treats</p>
-    </div>
-    <p class="head-logo">LA Chocolate Co.</p>
+    <!-- <div class="desktop-nav">
+        <ul>
+            <li><a hfrf="#">search</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">account</a></li>
+            <li><a href="#">cart</a></li>
+        </ul>
+    </div> -->
+    <!-- <img src="images/logo.png" alt="B-Side Logo">
+    <div></div> -->
+    <div><p class="head-logo">LA Chocolate Co.</p></div>
     <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
     <div class="account"><i class="fa-solid fa-user"></i></div>
+    <!-- <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
 </header>
+
 <main>
+    <div class="list">
+        <a href="#"><p>Bars</p></a>
+        <a href="#"><p>Boxes</p></a>
+        <a href="#"><p>Custom</p></a>
+        <a href="#"><p>Treats</p></a>
+    </div>
+    <!-- <div class="desktop-nav">
+        <ul>
+            <li><a hfrf="#">search</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">account</a></li>
+            <li><a href="#">cart</a></li>
+        </ul>
+    </div> -->
     <div>
         <video class="hero-vid" autoplay muted loop>
             <source src="media/hero-vid.mp4" type="video/mp4">
@@ -46,15 +84,21 @@
         </div>
     </section>
 
+    <!-- <div class="half-circle-pink"></div>
+    <div class="half-circle-blue"></div> -->
+    <img src="images/pink-half-circle.png" alt="light pink half circle background" class="pink-half">
+    <img src="images/blue-half-circle.png" alt="light blue half circle background" class="blue-half">
 
-        <div class="half-circle-pink"></div>
-        <div class="half-circle-blue"></div>
 
     <div class="shopping">
+       <div class="link-to-bar">
        <img src="images/home-bar-link.png" alt="chocolate bar shop button" class="shop-bars">
-    <!-- <button type="button">Bars</button> -->
+       <button class="bars-button" type="button">Bars</button>
+       </div>
+       <div class="link-to-box">
        <img src="images/home-box-link.png" alt="chocolate boxes shop button" class="shop-boxes">
-    <!-- <button type="button">Boxes</button> -->
+       <button class="boxes-button" type="button">Boxes</button>
+       </div>
     </div>
 
     <section class=socials>
