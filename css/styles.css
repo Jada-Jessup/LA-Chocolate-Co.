@@ -7,26 +7,22 @@ box-sizing:border-box;
 
 }
 
-/* // <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 200 to 800 */
 
-/* .manrope-<uniquifier>{
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 
-/* Header */
-
-/* Variables */
+/* Variables--------------------------------- */
 
 :root{
   --brown:#43261E;
 }
 
+
+
+
+
+/* Header -------------------------------*/
+
 header{
- min-height:10px;
+ min-height:80px;
   background-image: linear-gradient(to right,rgba(255,122,190,0.6),rgba(255,222,79,0.6), rgba(117,200,245,0.6));
 }
 
@@ -37,16 +33,17 @@ header{
   font-size:1.75rem;
   color:#43261E;
   position:relative;
-  left:25%;
+  left:20%;
   bottom:45px;
   width:fit-content;
+  
 }
 
 .cart{
   width:fit-content;
   font-size:1.75rem;
   position:relative;
-  left:80%;
+  left:75%;
   bottom:85px;
   color:var(--brown);
 }
@@ -60,13 +57,15 @@ header{
   color:var(--brown);
 }
 
-/* Navigation */
+
+
+
+/* Navigation---------------------------- */
 nav{
   color:#43261E;
   font-family:'Manrope', sans-serif;
   display:none;
 }
-
 
 ul{
   display:flex;
@@ -79,6 +78,7 @@ ul{
   font-weight:bold;
   background-color:white;
   padding:20px 0px;
+  margin-bottom:-40%;
 }
 
 ul li a{
@@ -90,12 +90,13 @@ label{
   color:#43261E;
   font-size:2rem;
   cursor:pointer;
+  position:relative;
+  left:5%;
 
 }
 
 #hamburger{
   display:none;
-
 }
 
 #hamburger:checked~nav{
@@ -104,17 +105,18 @@ label{
 
 #hamburger:checked~div{
   position:relative;
-  bottom:140px;
+  bottom:205px;
 }
 
 #hamburger:checked~.account{
   position:relative;
-  bottom:270px;
+  bottom:330px;
+  left:88%;
 }
 
 #hamburger:checked~.cart{
   position:relative;
-  bottom:227px;
+  bottom:290px;
 }
 
 #hamburger:checked header{
@@ -125,9 +127,49 @@ label{
   display:none;
 }
 
+nav div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* padding:0px 60px; */
+  width:65%;
+  border-bottom:solid black 2px; 
+  margin-bottom:2%;
+}
 
 
-/* Hero Video */
+nav div i{
+  margin-left:5%;
+}
+
+
+.search{
+  align-items:center;
+  border:black solid 2px;
+  border-radius:10px;
+  padding:0px 150px;
+  margin-bottom:5%;
+  /* padding-right:90px; */
+}
+
+.fa-magnifying-glass{
+  margin-right:20%;
+}
+
+
+.nav-social{
+  font-size:2.25rem;
+  margin-top:7%;
+  justify-content:space-around;
+  border-bottom:white solid 2px;
+}
+
+.about{
+  border-bottom:white solid 2px;
+}
+
+
+/* Hero Video------------------------------ */
 .hero-vid{
   margin-top:15%;
   height:auto;
@@ -138,7 +180,7 @@ label{
 
 
 
-/* Body */
+/* Body------------------------------------ */
 h2{
   font-family:'Manrope', sans-serif;
   /* font-optical-sizing:auto; */
@@ -160,8 +202,30 @@ p{
   margin-top:20%;
 }
 
+.our-story{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:15%;
+}
 
-/* Scroll */
+.back{
+  font-size:2rem;
+  margin-bottom:5%;
+}
+
+.story{
+  font-size:15px;
+  text-align:center;
+  line-height:23px;
+}
+
+.story2{
+  display:none;
+}
+
+
+/* Scroll------------------------------------------ */
 .scroll{
   display:flex;
  margin-left:-8%;
@@ -205,7 +269,21 @@ p{
   position:relative;
   left:35%;
   top:275px;
-  
+}
+
+.about-blue-half{
+  position:relative;
+  left:60%;
+  bottom:300px;
+  z-index:-999;
+  margin-bottom:-110%;
+}
+
+.about-yellow-half{
+  position:relative;
+  bottom:260px;
+  margin-bottom:-120%;
+  z-index:-999;
 }
 
 
@@ -226,12 +304,49 @@ p{
 }
 
 
-/* Socials */
+
+/* Social Posts------------------------- */
+
+.social-posts img{
+  height:178px;
+  width:178px;
+  margin-bottom:30%;
+}
+
+.social-posts{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.posts1{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.post2{
+  display:flex;
+  flex-direction:column;
+}
+
+
+
+
+
+
+
+/* Socials ------------------------------*/
 
 .socials{
   margin-top:-450px;
   text-align:center;
 }
+
+.ffm{
+  text-align:center;
+  margin-bottom:20%;
+}
+
 
 .fa-x-twitter{
   margin-right:5%;
@@ -250,11 +365,18 @@ p{
   color:var(--brown);
 }
 
+.ffm div{
+  font-size:2.5rem;
+  color:var(--brown);
+}
 
-/* Values */
+
+
+
+/* Values---------------------------- */
 .ethics{
   display:flex;
-  justify-content:center;
+  /* jtify-content:center; */
   font-size:1.25rem;
   margin-top:25%;
   margin-left:5%;
@@ -370,8 +492,12 @@ p{
 
 a:link{
   color:#43261E;
+  
 }
 
+.home-logo a:link{
+  text-decoration:none;
+}
 
 a:visited{
   color:#43261E;
@@ -451,7 +577,7 @@ footer{
 .head-logo{
   font-size:2.5rem;
   position:relative;
-  left:27%;
+  left:20%;
   bottom:65px;
   letter-spacing:5px;
 }
@@ -490,39 +616,28 @@ label{
 
 #hamburger:checked~div{
   position:relative;
-  bottom:320px;
+  bottom:300px;
 }
  
 #hamburger:checked~.account{
   position:relative;
-  bottom:500px;
+  left:90%;
+  bottom:485px;
 } 
 
 #hamburger:checked~.cart{
   position:relative;
-  bottom:440px;
+  bottom:425px;
 }
 
 nav ul{
   font-size:2rem;
 }
 
-/* a:link{
-  color:#43261E;
-}
-
-
-a:visited{
-  color:#43261E;
-}
-
-a:hover{
-  color:#75C8F5;
-} */
 
   .hero-vid{
     margin-top:5%;
-    margin-bottom:-10%;
+    margin-bottom:-5%;
   }
 
   .new{
@@ -558,33 +673,7 @@ a:hover{
     
   }
 
-  /* .shopping button{
-    position:relative;
-    left:20%;
-  } */
 
-  /* .link-to-bar button{
-    position:relative;
-    left:8%;
-   bottom:520px;
-  }
-
-  .link-to-button{
-    position:relative;
-    
-  } */
-
-  /* .link-to-box button{
-
-  } */
-
-  .shop-bars{
-    position:relative;
-    left:5%;
-    bottom:615px;
-    margin-right:5%;
-    /* margin-top:-50%; */
-  }
 
   .shop-boxes{
     position:relative;
@@ -615,6 +704,25 @@ a:hover{
     margin-bottom:-5%;
   }
 
+
+.back{
+  font-size:2.5rem;
+}
+
+.story{
+  font-size:1rem;
+  width:90%;
+}
+
+.our-story{
+  justify-content:center;
+  width:50%;
+  position:relative;
+  left:11%;
+  margin-top:25%;
+}
+
+
   .pink-half{
     height:auto;
     width:210px;
@@ -629,6 +737,64 @@ a:hover{
     left:50%;
     top:-1px;
   }
+
+  .about-blue-half{
+    height:auto;
+    width:200px;
+    position:relative;
+    left:76%;
+    bottom:1070px;
+  }
+
+
+
+.posts1{
+  position:relative;
+  right:15%;
+
+}
+
+.post2{
+  position:relative;
+  left:17%;;
+  bottom:540px;
+}
+
+.about-yellow-half{
+  height:auto;
+  width:160px;
+  position:relative;
+  bottom:1300px;
+}
+
+
+.ffm{
+  display:flex;
+  align-items:center;
+  margin-top:-65%;
+  margin-bottom:25%;
+  position:relative;
+  left:9%;
+ width:70%
+
+}
+
+.about-cos{
+  font-size:2.5rem;
+  margin-top:7%;
+  position:relative;
+  bottom:23px;
+
+}
+
+.social-logo{
+  display:flex;
+}
+
+.social-logo i{
+  margin-left:30%;
+  font-size:3rem;
+}
 
 .socials{
   margin-top:-65%;
@@ -722,6 +888,7 @@ footer{
   width:100%;
   margin-top:-15%;
   font-size:30px;
+  margin-bottom:-100%;
 }
 
 }
@@ -746,7 +913,6 @@ footer{
 
 .list a:link{
   text-decoration:none;
-
 }
 
 .list a:visited{
@@ -757,64 +923,13 @@ footer{
   color:#75C8F5;
 }
 
-/* header{
-  justify-content:center;
-}
 
-header div{
-  justify-content:flex-end;
-} */
-
- /* label{
-  display:none;
-}
-
-nav{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-
-  outline:red solid 2px;
-  font-size:6rem;
-
-} */
-
-/* 
-nav ul li {
-  max-width: 20%;
-  margin-top: -2%;
-  margin-right: 5%;
-  padding-bottom: 2%;
-  padding-top:3%;
-} */
-
-/* header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
  label {
   display:none;
 }
 
-/* #hamburger:checked{
-  display:flex;
-}  */
 
- /* nav ul {
-  position: relative;
-  z-index: 999;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-} */
-
-/* .desktop-nav{
-  display:flex;
-  flex-direction:row;
-  
-} */
 
 .head-logo{
   position:relative;
@@ -869,6 +984,9 @@ position:relative;
 top:9px;
 }
 
+
+
+
 .pink-half{
   position:relative;
   bottom:90px;
@@ -882,9 +1000,64 @@ top:9px;
   left:63%;
   top:150px;
   
+}
+
+.about-blue-half{
+  height:auto;
+  width:250px;
+  position:relative;
+  left:80%;
+  bottom:1800px;
+}
+
+.about-yellow-half{
+  height:auto;
+  width:225px;
+  position:relative;
+  bottom:2100px
+
+}
+
+.back{
+  font-size:2.75rem;
+}
+
+.story{
+  font-size:1rem;
+}
+
+.story2{
+  font-size:1rem;
+  display:flex;
+  text-align:center;
+  margin-top:10%;
+}
+
+.our-story{
+  position:relative;
+  bottom:100px;
+  left:11%;
+
+}
+
+.posts1{
+  position:relative;
+  right:21%;
+  bottom:800px;
+}
+
+.post2{
+  position:relative;
+  right:21%;
+  bottom:800px;
   
 }
 
+
+.social-posts img{
+  height:130%;
+  width:130%;
+}
 .shopping{
  position:relative;
  bottom:30px
@@ -892,17 +1065,21 @@ top:9px;
 
 .link-to-bar{
   position:relative;
-  left:2%;
+  left:3%;
+  position:relative;
+  bottom:200px
 }
 
 .link-to-bar button{
   padding:3px 110px;
+  position:relative;
+  bottom:470px;
+  left:20%;
 }
 
 .link-to-box{
   position:relative;
- right:1%;
- top:130px;
+ top:120px;
 }
 
 .link-to-box button{
@@ -920,11 +1097,24 @@ top:9px;
 }
 
 
+
 .socials{
   margin-top:-48%;
   margin-bottom:-15%;
 
 }
+
+.ffm{
+  position:relative;
+  left:15%;
+  margin-top:-60%;
+  /* margin-bottom:40%; */
+}
+
+.about-cos{
+  font-size:3.5rem;
+}
+
 
 .cos{
   font-size:3.5rem;
@@ -939,6 +1129,16 @@ top:9px;
   position:relative;
   bottom:60px;
   
+}
+
+.ethics p{
+  position:relative;
+  left:23%;
+}
+
+.ethics i{
+  position:relative;
+  left:23%;
 }
 
 .fa-truck{
