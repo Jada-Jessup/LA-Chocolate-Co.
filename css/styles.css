@@ -78,7 +78,7 @@ ul{
   font-weight:bold;
   background-color:white;
   padding:20px 0px;
-  margin-bottom:-40%;
+  margin-bottom:-30%;
 }
 
 ul li a{
@@ -105,18 +105,18 @@ label{
 
 #hamburger:checked~div{
   position:relative;
-  bottom:205px;
+  bottom:235px;
 }
 
 #hamburger:checked~.account{
   position:relative;
-  bottom:330px;
+  bottom:360px;
   left:88%;
 }
 
 #hamburger:checked~.cart{
   position:relative;
-  bottom:290px;
+  bottom:320px;
 }
 
 #hamburger:checked header{
@@ -127,20 +127,25 @@ label{
   display:none;
 }
 
-nav div{
+nav li{
   display:flex;
   justify-content:center;
   align-items:center;
   /* padding:0px 60px; */
   width:65%;
-  border-bottom:solid black 2px; 
+  /* border-bottom:solid black 2px;  */
   margin-bottom:2%;
+background-color:white;
 }
 
+.home,.shop, .nav-account, .nav-cart, .about{
+   border-bottom:solid black 2px; 
+}
 
-nav div i{
+nav i{
   margin-left:5%;
 }
+
 
 
 .search{
@@ -161,7 +166,7 @@ nav div i{
   font-size:2.25rem;
   margin-top:7%;
   justify-content:space-around;
-  border-bottom:white solid 2px;
+  border-bottom:none;
 }
 
 .about{
