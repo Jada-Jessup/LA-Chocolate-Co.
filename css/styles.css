@@ -105,18 +105,18 @@ label{
 
 #hamburger:checked~div{
   position:relative;
-  bottom:235px;
+  bottom:250px;
 }
 
 #hamburger:checked~.account{
   position:relative;
-  bottom:360px;
+  bottom:375px;
   left:88%;
 }
 
 #hamburger:checked~.cart{
   position:relative;
-  bottom:320px;
+  bottom:335px;
 }
 
 #hamburger:checked header{
@@ -126,6 +126,7 @@ label{
 .list{
   display:none;
 }
+
 
 nav li{
   display:flex;
@@ -309,6 +310,79 @@ p{
 }
 
 
+.shop-tags{
+  display:flex;
+  justify-content:center;
+  justify-content:space-around;
+  margin:5%  0% 20% 0%;
+}
+
+.shop-tags a:link{
+  text-decoration:none;
+}
+
+.bar-tab{
+  border-bottom:black solid 2px;
+}
+
+
+
+
+.shopping-cards{
+  /* text-align:center; */
+  display:flex;
+  justify-content:center;
+  font-size:17px;
+  /* margin-left:8%; */
+  
+}
+
+.shopping-cards div{
+  margin-bottom:20%;
+  text-align:center;
+  height:auto;
+  width:auto;
+}
+
+.shopping-cards p{
+  margin-top:5%;
+  margin-bottom:5%;
+  text-align:center;
+}
+
+.surprise p{
+  font-size:15px;
+ 
+  width:110%;
+}
+
+.cards1{
+  margin-right:5%;
+}
+
+
+
+
+
+/* .cards1{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:5%;
+
+}
+
+.milk{
+  margin-right:7%;
+  margin-bottom:10%;
+}
+
+
+.cards2{
+  display:flex;
+flex-direction: column;
+
+  
+} */
 
 /* Social Posts------------------------- */
 
@@ -543,6 +617,13 @@ button{
   box-shadow:7px 8px 5px rgb(35, 35, 35);
 }
 
+.shopping-cards button{
+  border:black solid 2px;
+  padding:1px 30px;
+  border-radius:7px;
+  box-shadow:0px 7px 5px rgb(208, 207, 207);
+}
+
 
 /* Footer */
 footer{
@@ -577,6 +658,8 @@ footer{
 }
 
 @media screen and (min-width: 830px){
+  
+
   
  
 .head-logo{
@@ -621,18 +704,18 @@ label{
 
 #hamburger:checked~div{
   position:relative;
-  bottom:300px;
+  bottom:400px;
 }
  
 #hamburger:checked~.account{
   position:relative;
   left:90%;
-  bottom:485px;
+  bottom:580px;
 } 
 
 #hamburger:checked~.cart{
   position:relative;
-  bottom:425px;
+  bottom:520px;
 }
 
 nav ul{
@@ -708,6 +791,70 @@ nav ul{
     width:350px;
     margin-bottom:-5%;
   }
+
+
+.shop-tags{
+  font-size:1.5rem;
+  margin-top:10%;
+  margin-bottom:10%;
+}
+
+.shopping-cards{
+  flex-wrap:wrap;
+  /* justify-content: center; */
+}
+
+
+.shopping-cards p{
+  font-size:20px;
+}
+
+.shopping-cards button{
+  padding:1% 20%;
+}
+
+
+.cards1{
+  display:flex;
+ position:relative;
+ left:-1%;
+
+}
+
+.milk{
+  height:100%;
+}
+
+.cards1 div{
+  margin-right:6%;
+  margin-bottom:-10%;
+
+ 
+}
+
+.cards1 img{
+  height:210px;
+  width:210px;
+}
+
+.cards2{
+  display:flex;
+  position:relative;
+  left:-3%;
+}
+
+.cards2 div{
+  margin-right:6%;
+}
+
+.cards2 img{
+  height:210px;
+  width:210px;
+}
+
+
+
+
 
 
 .back{
@@ -924,10 +1071,13 @@ footer{
   color:#43261E;
 }
 
-.list a:hover{
+/* .list a:hover{
+  color:#75C8F5;
+} */
+
+.sop-tags a:hover{
   color:#75C8F5;
 }
-
 
 
  label {
@@ -1022,6 +1172,72 @@ top:9px;
   bottom:2100px
 
 }
+
+
+
+
+
+
+.shop-tags{
+  font-size:2.5rem;
+  margin-left:3%;
+}
+
+.bar-tab{
+  border-bottom:black solid 3px;
+}
+
+.shopping-cards{
+  flex-wrap:wrap;
+  /* align-content:center; */
+
+}
+
+
+.shopping-cards p{
+  font-size:30px;
+}
+
+.shopping-cards button{
+  padding:2% 25%;
+  font-size:25px;
+}
+
+
+
+.cards1{
+  display:flex;
+  position:relative;
+  left:-4%;
+
+}
+
+.cards1 div{
+  margin-right:10%;
+  margin-bottom:-10%;
+}
+
+.cards1 img{
+  height:310px;
+  width:310px;
+}
+
+.cards2{
+  display:flex;
+  position:relative;
+  left:-6%;
+}
+
+.cards2 div{
+  margin-right:10%;
+}
+
+.cards2 img{
+  height:310px;
+  width:310px;
+}
+
+
 
 .back{
   font-size:2.75rem;
